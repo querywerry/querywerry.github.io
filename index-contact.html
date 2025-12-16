@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+</head>
+
+<body>
+  
+  <section class="Sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.png"</a>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" id="icon" onclick="hidemenu()">close</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index-about.html">About</a></li>
+          <li><a href="index-course.html">Course</a></li>
+          <li><a href="index-blog.html">Blog</a></li>
+          <li><a href="index-contact.html">contact</a></li>
+          
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" id="icon" onclick="showmenu()">
+menu
+</span>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+  
+   <!--Contact page-->
+  
+  <section class="location">
+    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.839556843472!2d2.292292676839352!3d48.85837367132952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x87d76c1ad2e7f999!2sEiffel%20Tower!5e0!3m2!1sen!2s!4v1701389400000!5m2!1sen!2s"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  </section>
+  
+ 
+  
+  
+  <section class="contact-us">
+    <div class="row">
+      
+      <div class="contact-col">
+        
+        
+      
+        <div>
+          <i class="fas fa-home"></i>
+          <span>
+            <h5>XYZ, Road ABC Building</h5>
+            <p>Banglalore laquaskish</p>
+          </span>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div>
+          <i class="fas fa-phone"></i>
+          <span>
+            <h5>+2234568608</h5>
+            <p>From monday-sunday</p>
+          </span>
+        </div>
+        
+        
+        
+        
+        <div>
+          <i class="fas fa-envelope"></i>
+          <span>
+            <h5>info@email.com</h5>
+            <p>Send in your inquiries</p>
+          </span>
+        </div>
+        
+        
+        
+      </div>
+      
+      
+      
+      
+      
+      <div class="contact-col">
+        <form action="formhandler.php" method="POST">
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+          
+          
+          
+          <input type="email" name="email" placeholder="Enter Your Email" required>
+          
+          
+          
+          
+          <input type="text" placeholder="Enter Your Subject" required name="subject">
+          
+          
+          
+          <textarea name="message"rows="8" placeholder="message"required></textarea>
+          
+          
+          
+          
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+          
+          
+        </form>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+<!-- footer section-->
+<section class="footer">
+  <h4>
+    About Us
+  </h4>
+  
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus<br> diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+  </p>
+  <div class="icons">
+    
+    
+    
+    <i class="fab fa-facebook-f"></i>  <!-- The "f" logo -->
+<!-- Or for the square version -->
+<i class="fab fa-instagram-square"></i>
+<!-- Or full Facebook -->
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+    
+    
+    
+    
+    
+  </div>
+  
+  
+  <p>
+    made with <span id="icon2" Class="material-symbols-outlined">favorite</span> by easy tutorials
+  </p>
+      </section>
+  
+  
+  
+  
+    <!-- java script section-->
+  
+  <script>
+    var navLinks = document.getElementById("navLinks")
+    function showmenu(){
+      navLinks.style.right = "0"
+    }
+    
+    function hidemenu(){
+      navLinks.style.right = "-200px"
+    }
+  </script>
+</body>
+</html>
