@@ -37,8 +37,12 @@
     <nav>
       <a href="index.html"><img src="logo.png"</a>
       <div class="nav-links" id="navLinks">
+        <a href="javascript:void(0);">
+  
         <span class="material-symbols-outlined" id="icon" onclick="hidemenu()">close</span>
-        <ul>
+        </a>
+        
+          <ul>
           
           
           
@@ -292,6 +296,7 @@ star
     }
     
     function hidemenu(){
+      event.stopPropagation();
       navLinks.style.right = "-200px"
     }
   </script>
